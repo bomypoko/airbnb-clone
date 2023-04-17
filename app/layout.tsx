@@ -1,5 +1,6 @@
 import './globals.css'
 import { Nunito } from 'next/font/google'
+import Modal from './components/modal/Modal'
 
 export const metadata = {
   title: 'AIR BNB CLONE',
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
+        <Modal title="Hello Bom Next Js" isOpen/>
         <Navbar/>
         {children}
       </body>
